@@ -1,0 +1,21 @@
+/* margin */
+
+.m-r-5 {
+    margin-right: 5px;
+}
+.m-r-10 {
+    margin-right: 10px;
+}
+/* padding */
+.p-r-0 {
+    padding-right: 0;
+}
+.p-l-0 {
+    padding-left: 0;
+}
+/* flex */
+.N-flex-item {
+display: flex;
+justify-content: center;
+align-items: center;
+}
