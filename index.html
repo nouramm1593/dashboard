@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/my-lib.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        window.onload = function () {
+          
+                document.getElementById("loader").style.display = "none";
+
+           
+
+        };
+    </script>
+</head>
+<body>
+<div class="" id="loader">
+    <img width="200" src="assets/images/loading.gif" alt="">
+</div>
+
+<div class="main-wrapper">
+    <nav class="fixed-top">
+        <header class="header d-flex justify-content-between py-1">
+
+            <div class="right-header d-flex align-items-center gap-3">
+                <div class="logo d-none d-md-block">
+                    <a href="/">لوحة تحكم المتجر</a>
+                </div>
+                <div class="px-3">
+                    <a href="#"><i class="fa-solid fa-chart-bar" id="sidebar-toggle"></i>
+
+                </div>
+                </a>
+                <form action="" class="d-none d-md-block">
+                    <input type="text" class="form-control" placeholder="اكتب اسم المنتج للبحث">
+                </form>
+            </div>
+
+
+
+            <div class="left-header d-flex align-items-center gap-3 px-3">
+                <div class="icons d-flex gap-3">
+                    <a href=""><i class="fa-regular fa-comment"> </i></a>
+
+
+                    <div class="messages-container position-relative " id="messages-container">
+                        <i class="fa-regular fa-envelope"> </i>
+                        <ul class="messages-area position-absolute text-center" id="messages-area">
+                            <div class="messages-header">
+                                <h3>أحدث الرسائل</h3>
+                            </div>
+                            <li class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex item-menu-left gap-3">
+                                    <img  src="assets/images/avatar.jpg" alt="">
+                                    <h4>سارى عرفة</h4>
+                                </div>
+                                <i class="fa-regular fa-comment"> </i>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex item-menu-left gap-3">
+                                    <img  src="assets/images/avatar2 .jpg" alt="">
+                                    <h4>سعيد علي</h4>
+                                </div>
+                                <i class="fa-regular fa-comment"> </i>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex item-menu-left gap-3">
+                                    <img  src="assets/images/avatar3.jpg" alt="">
+                                    <h4>سلوى ابراهيم</h4>
+                                </div>
+                                <i class="fa-regular fa-comment"> </i>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex item-menu-left gap-3">
+                                    <img  src="assets/images/avatar4.jpg" alt="">
+                                    <h4>علي يوسف</h4>
+                                </div>
+                                <i class="fa-regular fa-comment"> </i>
+                            </li>
+                            <a href="" class=" all-messages">كافة الرسائل</a>
+
+                        </ul>
+
+                    </div>
+
+
+
+
+
+                    <a class="position-relative bell" href=""><i class="fa-regular fa-bell"> </i></a>
+                    <a href=""><i class="fa-regular fa-comment"> </i></a>
+                </div>
+                <div class="avatar">
+                    <img  src="assets/images/avatar.jpg" alt="">
+                </div>
+                <a  data-bs-toggle="offcanvas" href="#users-online"><i class="fa-solid fa-bars-staggered active-users"> </i></a>
+
+            </div>
+        </header>
+    </nav>
+
+
+    <div class="sidebar" id="sidebar">
+        <div class="profile">
+            <img width="90px" src="assets/images/avatar.jpg" alt="">
+            <h3> سارى عرفة </h3>
+        </div>
+        <ul class="ul-sidebar">
+            <li class="mb-2 active">
+                <i class="fa-solid fa-house-user fa-5"></i>
+                <a href="" class="m-r-10"> الصفحة الرئيسية</a>
+            </li>
+            <li class="mb-2">
+                <i class="fa-solid fa-user-group"></i>
+                <a href="all-readers.html" class="m-r-10"> كافة القراء</a>
+            </li>
+            <li class="mb-2">
+                <i class="fa-brands fa-blogger"></i>
+                <a href="blog.html" class="m-r-10"> المدونة</a>
+            </li>
+           
+            <li class="mb-2">
+                <i class="fa-solid fa-book"></i>
+                <a href="" class="m-r-10"> كافة الكتب</a>
+                
+            </li>
+            <li class="mb-2">
+                <i class="fa-solid fa-users"></i>
+                <a href="" class="m-r-10"> كافة المؤلفين</a>
+                
+            </li>
+            <li class="mb-2">
+                <i class="fa-solid fa-user"></i>
+                <a href="" class="m-r-10"> المستخدمين</a>
+            </li>
+            
+            <li class="mb-2">
+                <i class="fa-solid fa-message"></i>
+                <a href="" class="m-r-10"> كافة الرسائل</a>
+            </li>
+            <li class="mb-2">
+                <i class="fa-solid fa-gear"></i>
+                <a href="blog.html" class="m-r-10"> الاعدادات</a>
+            </li>
+            <li class="mb-2">
+                <i class="fa-solid fa-key"></i>
+                <a href="" class="m-r-10"> الصلاحيات</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content p-3" id="content">
+        <div class="inner-content ">
+            <div class="container-fluid">
+                <div class="row gap-2 flex-wrap flex-md-nowrap">
+                    <div class="col-md-3 stat stat-blue flex-shrink-1">
+                        <div>
+                            <h3 class="mb-3">اعداد القراء المسجلين</h3>
+                            <h4>2500 قارء</h4>
+                            <p class="text-white">يتم تحديث العدد بشكل يومي</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-users fs-1"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 stat stat-green flex-shrink-1">
+                        <div>
+                            <h3 class="mb-3">اعداد الكتب الموجودة</h3>
+                            <h4>5500 كتاب</h4>
+                            <p class="text-white">يتم تحديث العدد بشكل يومي</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-users fs-1"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 stat stat-red flex-shrink-1">
+                        <div>
+                            <h3 class="mb-3">اعداد المؤلفين المنتسبين</h3>
+                            <h4>2500 مؤلف</h4>
+                            <p class="text-white">يتم تحديث العدد بشكل شهري</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-users fs-1"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 stat stat-yellow flex-shrink-1">
+                        <div>
+                            <h3 class="mb-3">اعداد الزوار</h3>
+                            <h4>2500 زائر</h4>
+                            <p class="text-white">يتم تحديث العدد بشكل يومي</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-users fs-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6 mb-3 p-r-0">
+                      <div class="card">
+                        <p class="text-center mt-2">جدول توضيحي لنسبة عدد القراء على مدار العام</p>
+                        <div id="chart">
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 p-l-0">
+                        <div class="card">
+                          <p class="text-center mt-2">جدول توضيحي لنسبة عدد المؤلفين على مدار العام</p>
+                          <div id="chart1">
+                              
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- users online list -->
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="users-online" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">المستخدمين المتصلين</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="alert alert-success">
+            كافة القراء النشطين
+        </div>
+     <div class="item-side-menu mb-3">
+        <div class="avatar-info position-relative ">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            <img width="50" src="assets/images/avatar.jpg" alt="">
+            <h4> سارة عرفة</h4>
+        </div>
+        <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp  whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger  messenger-icon"></i>
+
+        </div>
+     </div>
+     <div class="item-side-menu mb-3">
+        <div class="avatar-info position-relative ">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <img width="50" src="assets/images/avatar2 .jpg" alt="">
+              <h4>سعيد علي</h4>
+        </div>
+        <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp  whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger  messenger-icon"></i>
+
+        </div>
+     </div>
+     <div class="item-side-menu mb-3">
+        <div class="avatar-info position-relative ">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <img width="50"  src="assets/images/avatar3.jpg" alt="">
+              <h4>سلوى ابراهيم</h4>
+        </div>
+        <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp  whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger  messenger-icon"></i>
+
+        </div>
+     </div>
+    
+     
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="assets/js/charts.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
